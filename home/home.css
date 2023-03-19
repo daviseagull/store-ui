@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Righteous&display=swap');
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+main {
+	background-color: rgba(0, 0, 0, 0.3);
+	background-blend-mode: color;
+	background-image: url('../assets/home.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	height: 82%;
+}
+
+main h1 {
+	font-family: 'Righteous', cursive;
+	color: white;
+	font-size: 90px;
+	padding: 0 10px;
+}
+
+footer {
+	padding: 10px;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+footer section {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	font-size: 14px;
+}
+
+section input {
+	margin: 0;
+}
+
+button img {
+	color: white;
+}
+
+footer button {
+	font-family: 'Fjalla One', sans-serif;
+	width: 100%;
+	height: 60px;
+	border: none;
+	background-color: black;
+	color: white;
+}
