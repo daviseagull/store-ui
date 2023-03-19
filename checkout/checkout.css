@@ -1,0 +1,146 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0 20px;
+	height: 100%;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+body header {
+	display: flex;
+	justify-content: space-between;
+}
+
+body nav {
+	display: flex;
+	align-items: center;
+}
+
+nav > h2 {
+	color: lightgray;
+	padding-left: 5px;
+	font-size: 16px;
+}
+
+main {
+	display: flex;
+	gap: 10%;
+	flex-direction: column;
+	height: 60%;
+}
+
+main > section {
+	display: flex;
+	height: 30%;
+	justify-content: space-between;
+	border: 1px solid lightgray;
+}
+
+section > figure {
+	margin: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 40%;
+	height: 100%;
+	width: 150px;
+}
+
+#first {
+	background-image: url('../assets/detail-1.jpg');
+}
+
+#second {
+	background-image: url('../assets/detail-2.jpg');
+}
+
+section > aside {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	font-size: 12px;
+	width: 55%;
+}
+
+#description {
+	display: flex;
+	gap: 16px;
+	flex-direction: column;
+	justify-content: end;
+}
+
+aside h1 {
+	margin: 0;
+	font-size: 16px;
+}
+
+aside h2 {
+	margin: 0;
+	font-size: 12px;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+#total {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#total h1 {
+	font-style: italic;
+}
+
+#selector {
+	display: flex;
+	margin-right: 15px;
+	max-width: fit-content;
+	align-items: center;
+	border: 1px solid lightgray;
+	font-size: 16px;
+}
+
+#selector p {
+	margin: 0;
+	padding: 0 10px;
+}
+
+#selector button {
+	height: 100%;
+	border: none;
+	background-color: black;
+	color: white;
+}
+
+/* FOOTER */
+
+footer {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 20px;
+}
+
+footer section {
+	display: flex;
+	justify-content: space-between;
+}
+
+footer button {
+	font-family: 'Fjalla One', sans-serif;
+	width: 60%;
+	height: 32px;
+	border: none;
+	background-color: black;
+	color: white;
+}
+
+.payment {
+	font-size: 10px;
+}
+
+aside > h3 {
+	margin: 0;
+	color: lightgray;
+	font-weight: normal;
+	font-size: 10px;
+}
