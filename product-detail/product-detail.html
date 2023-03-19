@@ -2,9 +2,50 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<title>Title</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="../global-style.css" />
+		<link rel="stylesheet" type="text/css" href="product-detail.css" />
+		<script type="text/javascript" src="product-detail.js"></script>
+
 	</head>
 	<body>
-		FUNCIONOU ESSA PORRA
+		<header>
+			 <button><img src="../assets/arrow-left.svg" onclick="window.location.href = '../home/home.html';"> </button>
+			 <h1>Best Product</h1>
+			 <button><img src="../assets/cart.png" onclick="window.location.href = '../checkout/checkout.html';"> </button>
+		</header>
+		<div class="container_img">
+			<img src="../assets/detail-1.jpg" class="preview" id="previewer">
+
+				
+					
+	
+			<figure class="img_list">
+				<img class="img_item" onclick="ChangeImage(event)" src="../assets/detail-1.jpg">
+				<img class="img_item" onclick="ChangeImage(event)" src="../assets/detail-2.jpg">
+				<img class="img_item" onclick="ChangeImage(event)" src="../assets/detail-3.jpg">
+				<img class="img_item" onclick="ChangeImage(event)" src="../assets/detail-4.jpg">
+				<div class="img_item last_img_item">
+					+3
+				</div>
+				
+			</figure>
+
+		</div>
+		<main>
+			<div>
+				<p id="information">Product information</p>
+				<p> abstract Shapes and designs to the classic windrunner as part of the Artist in Residence (A.I.R.) collection. <strong>Read more</strong></p>
+			</div>
+		</main>
+		<footer>
+			<div class="total_to_pay">
+				<p id="total">Grand Total</p>
+				<p> 250,00 </p>
+			</div>
+			
+			<button onclick="window.location.href = '../home/home.html';"> Checkout </button>
+		</footer>
 	</body>
 </html>

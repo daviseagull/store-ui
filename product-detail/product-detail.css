@@ -1,0 +1,102 @@
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around; 
+
+
+	background-blend-mode: color;
+	
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	
+}
+.container_img{
+    display: flex;
+    height: 60%;
+    gap: 3%;
+    
+    padding: 0;
+    margin: 0;
+    justify-content: left;
+}
+.preview{
+    width: 70%;
+    background-color: aqua;
+    padding: 0;
+    margin: 0;
+}
+.img_list{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:space-between;
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.356);
+    padding: 0;
+    margin: 0;
+
+    background-color: rgba(0, 0, 0, 0.527);
+}
+.img_item{
+    padding: 0;
+    margin: 0;
+    height: 17%;
+    aspect-ratio:1;
+}
+.last_img_item{
+    background-image: url(../assets/detail-1.jpg);
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);     
+    background-blend-mode: color;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    font-size: 2.5vh;
+    font-weight: 600;
+}
+
+header h1 {
+	font-family: 'Righteous', cursive;
+	color: rgb(0, 0, 0);
+	font-size: 26px;
+	padding: 0 10px;
+}
+main{
+    font-family: 'Righteous', cursive;
+
+}
+#information{
+    color: rgba(0, 0, 0, 0.308);
+}
+
+footer button{
+    font-family: 'Fjalla One', sans-serif;
+	width: 80%;
+	height: 80px;
+	border: none;
+	background-color: rgb(32, 32, 32);
+	color: rgb(255, 255, 255);
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+#total{
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.308);
+}
+.total_to_pay{
+    width: 20%;
+    font-family: 'Righteous', cursive;
+	color: rgb(0, 0, 0);
+	font-size: 16px;
+	padding: 0 10px;
+}
