@@ -1,81 +1,82 @@
-header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-around; 
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0 20px;
+	height: 100%;
+	font-family: 'Fjalla One', sans-serif;
+}
 
+body nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
 
+nav button {
+	height: 50px;
+	border: none;
+	background: none;
+}
+
+.container_img {
+	display: flex;
+	height: 60%;
+	gap: 3%;
+
+	padding: 0;
+	margin: 0;
+	justify-content: left;
+}
+
+.preview {
+	width: 70%;
+	background-color: aqua;
+	padding: 0;
+	margin: 0;
+}
+
+.img_list {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 25%;
+	background-color: rgba(255, 255, 255, 0.356);
+	padding: 0;
+	margin: 0;
+
+	background-color: rgba(0, 0, 0, 0.527);
+}
+
+.img_item {
+	padding: 0;
+	margin: 0;
+	height: 17%;
+	aspect-ratio: 1;
+}
+
+.last_img_item {
+	background-image: url(../assets/detail-1.jpg);
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.3);
 	background-blend-mode: color;
-	
+	justify-content: center;
+	align-items: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	display: flex;
-	
-}
-.container_img{
-    display: flex;
-    height: 60%;
-    gap: 3%;
-    
-    padding: 0;
-    margin: 0;
-    justify-content: left;
-}
-.preview{
-    width: 70%;
-    background-color: aqua;
-    padding: 0;
-    margin: 0;
-}
-.img_list{
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-    justify-content:space-between;
-    width: 25%;
-    background-color: rgba(255, 255, 255, 0.356);
-    padding: 0;
-    margin: 0;
-
-    background-color: rgba(0, 0, 0, 0.527);
-}
-.img_item{
-    padding: 0;
-    margin: 0;
-    height: 17%;
-    aspect-ratio:1;
-}
-.last_img_item{
-    background-image: url(../assets/detail-1.jpg);
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.3);     
-    background-blend-mode: color;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-	background-repeat: no-repeat;
-    background-position: center;
-    color: white;
-    font-size: 2.5vh;
-    font-weight: 600;
+	background-position: center;
+	color: white;
+	font-size: 2.5vh;
+	font-weight: 600;
 }
 
-header h1 {
-	font-family: 'Righteous', cursive;
-	color: rgb(0, 0, 0);
-	font-size: 26px;
-	padding: 0 10px;
-}
-main{
-    font-family: 'Righteous', cursive;
-
-}
-#information{
-    color: rgba(0, 0, 0, 0.308);
+#information {
+	color: rgba(0, 0, 0, 0.308);
 }
 
-footer button{
-    font-family: 'Fjalla One', sans-serif;
+footer button {
+	font-family: 'Fjalla One', sans-serif;
 	width: 80%;
 	height: 80px;
 	border: none;
@@ -83,20 +84,104 @@ footer button{
 	color: rgb(255, 255, 255);
 }
 
-footer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
+#total {
+	font-size: 10px;
+	color: rgba(0, 0, 0, 0.308);
 }
-#total{
-    font-size: 10px;
-    color: rgba(0, 0, 0, 0.308);
-}
-.total_to_pay{
-    width: 20%;
-    font-family: 'Righteous', cursive;
+.total_to_pay {
+	width: 20%;
+	font-family: 'Righteous', cursive;
 	color: rgb(0, 0, 0);
 	font-size: 16px;
 	padding: 0 10px;
+}
+
+/* MAIN */
+
+main {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+#rating {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#rating img {
+	height: 20px;
+}
+
+#rating h1 {
+	font-size: 18px;
+	padding: 0 6px;
+	border-right: 1px solid lightgray;
+}
+
+#rating p {
+	padding-left: 6px;
+	color: lightblue;
+}
+
+#information h1 {
+	margin: 0;
+	font-size: 12px;
+	color: black;
+}
+
+#information p {
+	font-size: 12px;
+}
+
+#information strong {
+	color: black;
+	text-decoration: underline;
+}
+
+#title h2 {
+	margin: 0;
+	font-size: 16px;
+	font-weight: normal;
+	color: lightblue;
+}
+
+#title h1 {
+	margin: 0;
+}
+
+/* FOOTER */
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 20px;
+}
+
+footer aside {
+	display: flex;
+	flex-direction: column;
+	font-style: italic;
+}
+
+footer button {
+	font-family: 'Fjalla One', sans-serif;
+	width: 60%;
+	height: 60px;
+	border: none;
+	background-color: black;
+	color: white;
+}
+
+aside > h1 {
+	margin: 0;
+}
+
+aside > h3 {
+	margin: 0;
+	color: lightgray;
+	font-weight: normal;
+	font-size: 10px;
 }

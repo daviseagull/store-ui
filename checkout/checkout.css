@@ -7,17 +7,24 @@ body {
 	font-family: 'Fjalla One', sans-serif;
 }
 
-body header {
+body nav {
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
 }
 
-body nav {
+nav button {
+	height: 50px;
+	border: none;
+	background: none;
+}
+
+body header {
 	display: flex;
 	align-items: center;
 }
 
-nav > h2 {
+header > h2 {
 	color: lightgray;
 	padding-left: 5px;
 	font-size: 16px;
@@ -41,7 +48,7 @@ section > figure {
 	margin: 0;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: 40%;
+	background-position: 90%;
 	height: 100%;
 	width: 150px;
 }
@@ -112,8 +119,6 @@ aside h2 {
 	color: white;
 }
 
-/* FOOTER */
-
 footer {
 	display: flex;
 	flex-direction: column;
@@ -128,7 +133,7 @@ footer section {
 footer button {
 	font-family: 'Fjalla One', sans-serif;
 	width: 60%;
-	height: 32px;
+	height: 60px;
 	border: none;
 	background-color: black;
 	color: white;
