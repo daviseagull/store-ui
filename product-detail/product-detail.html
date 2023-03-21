@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<nav>
-			<button onclick="window.location.href = '../product-detail/product-detail.html'; ">
+			<button onclick="window.location.href = '../home/home.html'; ">
 				<img src="../assets/arrow-left.svg" />
 			</button>
 
@@ -18,19 +18,18 @@
 			<img src="../assets/cart.svg" />
 		</nav>
 
-		<div class="container_img">
-			<img src="../assets/detail-1.jpg" class="preview" id="previewer" />
+		<article>
+			<main id="previewer"></main>
 
-			<figure class="img_list">
-				<img class="img_item" onclick="ChangeImage(event)" src="../assets/detail-1.jpg" />
-				<img class="img_item" onclick="ChangeImage(event)" src="../assets/detail-2.jpg" />
-				<img class="img_item" onclick="ChangeImage(event)" src="../assets/detail-3.jpg" />
-				<img class="img_item" onclick="ChangeImage(event)" src="../assets/detail-4.jpg" />
-				<div class="img_item last_img_item">+3</div>
-			</figure>
-		</div>
+			<aside>
+				<div id="second-image" onclick="ChangeImage(event)"></div>
+				<div id="third-image" onclick="ChangeImage(event)"></div>
+				<div id="fourth-image" onclick="ChangeImage(event)"></div>
+				<div id="last-image">+3</div>
+			</aside>
+		</article>
 
-		<main>
+		<main id="detail">
 			<section id="title">
 				<h2>Men's Running Windrunner Jacket</h2>
 				<h1>Nike Repel A.I.R Hola Lou</h1>
@@ -42,7 +41,10 @@
 			</section>
 
 			<section id="size">
-				<div class="size-box"></div>
+				<div class="size-box">S</div>
+				<div class="size-box">M</div>
+				<div class="size-box">L</div>
+				<div class="size-box">XL</div>
 			</section>
 
 			<section id="information">
