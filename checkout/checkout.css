@@ -88,13 +88,13 @@ aside h2 {
 	text-decoration: underline;
 }
 
-#total {
+.total {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-#total h1 {
+.total h1 {
 	font-style: italic;
 }
 

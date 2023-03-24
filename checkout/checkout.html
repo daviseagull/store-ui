@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" type="text/css" href="../global-style.css" />
 		<link rel="stylesheet" type="text/css" href="checkout.css" />
+		<script type="text/javascript" src="checkout.js"></script>
 		<title>Detalhe de produto</title>
 	</head>
 	<body>
@@ -31,12 +32,12 @@
 						<h1>Camiseta Nike</h1>
 						<h2>Mack Collection</h2>
 					</div>
-					<div id="total">
-						<h1>R$ 220,00</h1>
+					<div class="total">
+						<h1 id="product_0_total">R$ 220,00</h1>
 						<div id="selector">
-							<button>-</button>
-							<p>2</p>
-							<button>+</button>
+							<button onclick="calculateValues(0,'-')">-</button>
+							<p id="product_0_quantity">2</p>
+							<button onclick="calculateValues(0,'+')">+</button>
 						</div>
 					</div>
 				</aside>
@@ -50,12 +51,12 @@
 						<h1>Camiseta Nike</h1>
 						<h2>Mack Collection</h2>
 					</div>
-					<div id="total">
-						<h1>R$ 110,00</h1>
+					<div class="total">
+						<h1 id="product_1_total">R$ 110,00</h1>
 						<div id="selector">
-							<button>-</button>
-							<p>2</p>
-							<button>+</button>
+							<button onclick="calculateValues(1,'-')">-</button>
+							<p id="product_1_quantity">2</p>
+							<button onclick="calculateValues(1,'+')">+</button>
 						</div>
 					</div>
 				</aside>
@@ -70,7 +71,7 @@
 				</section>
 				<section class="payment">
 					<h2>Sub total :</h2>
-					<h2>R$ 440,00</h2>
+					<h2 id="sub_total">R$ 330,00</h2>
 				</section>
 				<section class="payment">
 					<h2>Delivery Fee :</h2>
@@ -85,7 +86,7 @@
 			<section>
 				<aside>
 					<h3>Grand Total</h3>
-					<h1>R$ 430,00</h1>
+					<h1 id="grand_total">R$ 320,00</h1>
 				</aside>
 				<button>Pay now</button>
 			</section>
