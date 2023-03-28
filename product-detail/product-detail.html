@@ -18,47 +18,50 @@
 			<img src="../assets/cart.svg" />
 		</nav>
 
-		<article>
-			<main id="previewer"></main>
+		<main>
+			<article>
+				<div id="previewer"></div>
 
-			<aside>
-				<div id="second-image" onclick="ChangeImage(event)"></div>
-				<div id="third-image" onclick="ChangeImage(event)"></div>
-				<div id="fourth-image" onclick="ChangeImage(event)"></div>
-				<div id="last-image">+3</div>
-			</aside>
-		</article>
+				<aside>
+					<div id="second-image" onclick="ChangeImage(event)"></div>
+					<div id="third-image" onclick="ChangeImage(event)"></div>
+					<div id="fourth-image" onclick="ChangeImage(event)"></div>
+					<div id="last-image">+3</div>
+				</aside>
+			</article>
 
-		<main id="detail">
-			<section id="title">
-				<h2>Men's Running Windrunner Jacket</h2>
-				<h1>Nike Repel A.I.R Hola Lou</h1>
-			</section>
-			<section id="rating">
-				<img src="../assets/star.svg" />
-				<h1>4,8</h1>
-				<p>240 reviews</p>
-			</section>
+			<div id="detail">
+				<div>
+					<section id="title">
+						<h2>Men's Running Windrunner Jacket</h2>
+						<h1>Nike Repel A.I.R Hola Lou</h1>
+					</section>
+					<section id="rating">
+						<img src="../assets/star.svg" />
+						<h1>4,8</h1>
+						<p>240 reviews</p>
+					</section>
 
-			<section id="size">
-				<div class="size-box">S</div>
-				<div class="size-box">M</div>
-				<div class="size-box">L</div>
-				<div class="size-box">XL</div>
-			</section>
+					<section id="size">
+						<div class="size-box">S</div>
+						<div class="size-box">M</div>
+						<div class="size-box">L</div>
+						<div class="size-box">XL</div>
+					</section>
+				</div>
 
-			<section id="information">
-				<h1>Product informations</h1>
-				<p>Abstract Shapes and designs to the classic windrunner as part of the Artist in Residence (A.I.R.) collection. <strong>Read more</strong></p>
-			</section>
+				<section id="information">
+					<h1>Product informations</h1>
+					<p>Abstract Shapes and designs to the classic windrunner as part of the Artist in Residence (A.I.R.) collection. <strong>Read more</strong></p>
+				</section>
+				<section id="checkout">
+					<aside>
+						<h3>Grand Total</h3>
+						<h1>R$ 250,00</h1>
+					</aside>
+					<button onclick="window.location.href = '../checkout/checkout.html';">Checkout</button>
+				</section>
+			</div>
 		</main>
-
-		<footer>
-			<aside>
-				<h3>Grand Total</h3>
-				<h1>R$ 250,00</h1>
-			</aside>
-			<button onclick="window.location.href = '../checkout/checkout.html';">Checkout</button>
-		</footer>
 	</body>
 </html>

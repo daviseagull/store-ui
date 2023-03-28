@@ -21,6 +21,12 @@ nav button {
 	background: none;
 }
 
+body main {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
 /* ARTICLE */
 
 body article {
@@ -30,7 +36,7 @@ body article {
 	height: 45%;
 }
 
-article main {
+#previewer {
 	display: flex;
 	width: 70%;
 	height: 100%;
@@ -78,7 +84,7 @@ aside div {
 #last-image {
 	height: 20%;
 	background-image: url(../assets/detail-1.jpg);
-	background-position: 65%;
+	background-position: center;
 	background-color: rgba(0, 0, 0, 0.3);
 	background-blend-mode: color;
 	background-size: cover;
@@ -86,41 +92,6 @@ aside div {
 	justify-content: center;
 	align-items: center;
 }
-
-/* .img_list {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: space-between;
-	width: 25%;
-	background-color: rgba(255, 255, 255, 0.356);
-	padding: 0;
-	margin: 0;
-} */
-
-/* .img_item {
-	padding: 0;
-	margin: 0;
-	height: 17%;
-	aspect-ratio: 1;
-} */
-
-/* .last_img_item {
-	background-image: url(../assets/detail-1.jpg);
-	display: flex;
-	background-color: rgba(0, 0, 0, 0.3);
-	background-blend-mode: color;
-	justify-content: center;
-	align-items: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	color: white;
-	font-size: 2.5vh;
-	font-weight: 600;
-} */
-
-/* MAIN */
 
 #detail {
 	display: flex;
@@ -199,7 +170,7 @@ aside div {
 }
 
 /* FOOTER */
-footer {
+#checkout {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -207,13 +178,13 @@ footer {
 	padding-bottom: 20px;
 }
 
-footer aside {
+#checkout aside {
 	display: flex;
 	flex-direction: column;
 	font-style: italic;
 }
 
-footer button {
+#checkout button {
 	font-family: 'Fjalla One', sans-serif;
 	width: 60%;
 	height: 60px;
@@ -231,4 +202,32 @@ aside > h3 {
 	color: lightgray;
 	font-weight: normal;
 	font-size: 10px;
+}
+
+@media screen and (min-width: 800px) {
+	body main {
+		flex-direction: row;
+	}
+
+	main article {
+		height: 90%;
+		width: 65%;
+	}
+
+	#title {
+		font-size: 32px;
+	}
+
+	#information h1 {
+		font-size: 28px;
+	}
+
+	#information p {
+		font-size: 22px;
+	}
+
+	#detail {
+		justify-content: space-evenly;
+		width: 35%;
+	}
 }
