@@ -1,7 +1,7 @@
 body {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: flex-start;
 	padding: 0 20px;
 	height: 100%;
 	font-family: 'Fjalla One', sans-serif;
@@ -11,6 +11,22 @@ body nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+body>div{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.content{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
 }
 
 nav button {
@@ -41,6 +57,7 @@ main > section {
 	display: flex;
 	height: 30%;
 	justify-content: space-between;
+	gap: 5%;
 	border: 1px solid lightgray;
 }
 
@@ -50,7 +67,7 @@ section > figure {
 	background-repeat: no-repeat;
 	background-position: 90%;
 	height: 100%;
-	width: 150px;
+	width: 50%;
 }
 
 #first {
@@ -148,4 +165,60 @@ aside > h3 {
 	color: lightgray;
 	font-weight: normal;
 	font-size: 10px;
+}
+
+
+@media screen and (min-width: 800px) {
+	div>header{
+		justify-content: center;
+		width:100%
+	}
+
+	body>div{
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	.content{
+		justify-content: center;
+		align-items: center;
+	}
+
+	main{
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		/* padding: 0;
+		margin: 0;
+		background-color: antiquewhite;
+		height: 100%;
+		width: 30%; */
+	}
+
+	main > section {
+		padding: 0;
+		margin: 0;
+		aspect-ratio: 2/1;
+		/* height: 50%; */
+		width: 80%;
+	}
+
+	footer{
+		/* background-color: brown;
+		height: 100%;*/
+		width: 100%;
+	}
+
+	footer button {
+		width: 45%;
+	}
+	
 }

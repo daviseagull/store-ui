@@ -1,95 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" type="text/css" href="../global-style.css" />
-		<link rel="stylesheet" type="text/css" href="checkout.css" />
-		<script type="text/javascript" src="checkout.js"></script>
-		<title>Detalhe de produto</title>
-	</head>
-	<body>
-		<nav>
-			<button onclick="window.location.href = '../product-detail/product-detail.html'; ">
-				<img src="../assets/arrow-left.svg" />
-			</button>
 
-			<h1>Cart</h1>
-			<img src="../assets/menu.svg" />
-		</nav>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="../global-style.css" />
+	<link rel="stylesheet" type="text/css" href="checkout.css" />
+	<script type="text/javascript" src="checkout.js"></script>
+	<title>Detalhe de produto</title>
+</head>
+
+<body>
+	<nav>
+		<button onclick="window.location.href = '../product-detail/product-detail.html'; ">
+			<img src="../assets/arrow-left.svg" />
+		</button>
+
+		<h1>Cart</h1>
+		<img src="../assets/menu.svg" />
+	</nav>
+	<div>
 		<header>
 			<h1>Product List</h1>
 			<h2>(2)</h2>
 		</header>
+		<div class="content">
+			<main>
+				<section>
+					<figure id="first"></figure>
 
-		<main>
-			<section>
-				<figure id="first"></figure>
-
-				<aside>
-					<div id="description">
-						<h1>Camiseta Nike</h1>
-						<h2>Mack Collection</h2>
-					</div>
-					<div class="total">
-						<h1 id="product_0_total">R$ 220,00</h1>
-						<div id="selector">
-							<button onclick="calculateValues(0,'-')">-</button>
-							<p id="product_0_quantity">2</p>
-							<button onclick="calculateValues(0,'+')">+</button>
+					<aside>
+						<div id="description">
+							<h1>Camiseta Nike</h1>
+							<h2>Mack Collection</h2>
 						</div>
-					</div>
-				</aside>
-			</section>
-
-			<section>
-				<figure id="second"></figure>
-
-				<aside>
-					<div id="description">
-						<h1>Camiseta Nike</h1>
-						<h2>Mack Collection</h2>
-					</div>
-					<div class="total">
-						<h1 id="product_1_total">R$ 110,00</h1>
-						<div id="selector">
-							<button onclick="calculateValues(1,'-')">-</button>
-							<p id="product_1_quantity">2</p>
-							<button onclick="calculateValues(1,'+')">+</button>
+						<div class="total">
+							<h1 id="product_0_total">R$ 220,00</h1>
+							<div id="selector">
+								<button onclick="calculateValues(0,'-')">-</button>
+								<p id="product_0_quantity">2</p>
+								<button onclick="calculateValues(0,'+')">+</button>
+							</div>
 						</div>
-					</div>
-				</aside>
-			</section>
-		</main>
+					</aside>
+				</section>
 
-		<footer>
-			<div id="payment-summ">
-				<section id="summersale">
-					<h1>Summer sale</h1>
-					<img src="../assets/edit.svg" />
-				</section>
-				<section class="payment">
-					<h2>Sub total :</h2>
-					<h2 id="sub_total">R$ 330,00</h2>
-				</section>
-				<section class="payment">
-					<h2>Delivery Fee :</h2>
-					<h2>-</h2>
-				</section>
-				<section class="payment">
-					<h2>Discount :</h2>
-					<h2>R$ 10,00</h2>
-				</section>
-			</div>
+				<section>
+					<figure id="second"></figure>
 
-			<section>
-				<aside>
-					<h3>Grand Total</h3>
-					<h1 id="grand_total">R$ 320,00</h1>
-				</aside>
-				<button>Pay now</button>
-			</section>
-		</footer>
-	</body>
+					<aside>
+						<div id="description">
+							<h1>Camiseta Nike</h1>
+							<h2>Mack Collection</h2>
+						</div>
+						<div class="total">
+							<h1 id="product_1_total">R$ 110,00</h1>
+							<div id="selector">
+								<button onclick="calculateValues(1,'-')">-</button>
+								<p id="product_1_quantity">2</p>
+								<button onclick="calculateValues(1,'+')">+</button>
+							</div>
+						</div>
+					</aside>
+				</section>
+			</main>
+
+			<footer>
+				<div id="payment-summ">
+					<section id="summersale">
+						<h1>Summer sale</h1>
+						<img src="../assets/edit.svg" />
+					</section>
+					<section class="payment">
+						<h2>Sub total :</h2>
+						<h2 id="sub_total">R$ 330,00</h2>
+					</section>
+					<section class="payment">
+						<h2>Delivery Fee :</h2>
+						<h2>-</h2>
+					</section>
+					<section class="payment">
+						<h2>Discount :</h2>
+						<h2>R$ 10,00</h2>
+					</section>
+				</div>
+
+				<section>
+					<aside>
+						<h3>Grand Total</h3>
+						<h1 id="grand_total">R$ 320,00</h1>
+					</aside>
+					<button>Pay now</button>
+				</section>
+			</footer>
+		</div>
+	</div>
+</body>
+
 </html>
