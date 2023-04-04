@@ -2,6 +2,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	align-items: center;
 }
 
 main {
@@ -11,7 +12,8 @@ main {
 	background-size: cover;
 	background-repeat: no-repeat;
 	display: flex;
-	height: 82%;
+	width: 100%;
+	height: 85%;
 }
 
 main h1 {
@@ -22,6 +24,7 @@ main h1 {
 }
 
 footer {
+	width: 80%;
 	padding: 10px;
 	font-family: 'Fjalla One', sans-serif;
 }
@@ -30,11 +33,15 @@ footer section {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
-	font-size: 14px;
+	gap: 10px;
+	font-size: 12px;
 }
 
 section input {
-	margin: 0;
+	margin: 10px 0;
+}
+section p {
+	margin: 10px 0;
 }
 
 button img {
@@ -48,4 +55,20 @@ footer button {
 	border: none;
 	background-color: black;
 	color: white;
+}
+
+@media screen and (min-width: 800px) {
+	main{
+		height: 100%;
+		width: 100%;
+	}
+
+	footer{
+		color: white;
+		position: absolute;
+		align-self:flex-start;
+		top: 19%;
+		margin-left: 10px;
+		width: 660px;
+	}
 }
