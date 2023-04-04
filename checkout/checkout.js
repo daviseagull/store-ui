@@ -44,6 +44,6 @@ function calculateValues(itemIndex, operation) {
 
     itemTotalElement.textContent = `R$ ${item.currentPrice.toFixed(2).replace('.', ',')}`
     itemQuantityElement.textContent = item.quantity
-    subTotalElement.textContent = `R$ ${total.toFixed(2).replace('.', ',')}`
-    grandTotalElement.textContent = `R$ ${(subTotal).toFixed(2).replace('.', ',')}`
+    subTotalElement.textContent = `R$ ${subTotal.toFixed(2).replace('.', ',')}`
+    grandTotalElement.textContent = `R$ ${(total).toFixed(2).replace('.', ',')}`
 }
