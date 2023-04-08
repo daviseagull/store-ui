@@ -1,67 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" type="text/css" href="../global-style.css" />
-		<link rel="stylesheet" type="text/css" href="product-detail.css" />
-		<script type="text/javascript" src="product-detail.js"></script>
-	</head>
-	<body>
-		<nav>
-			<button onclick="window.location.href = '../home/home.html'; ">
-				<img src="../assets/arrow-left.svg" />
-			</button>
 
-			<h1>Best Product</h1>
-			<img src="../assets/cart.svg" />
-		</nav>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="../global-style.css" />
+	<link rel="stylesheet" type="text/css" href="product-detail.css" />
+	<script type="text/javascript" src="product-detail.js"></script>
+</head>
 
-		<main>
-			<article>
-				<div id="previewer"></div>
+<body>
+	<nav>
+		<button onclick="window.location.href = '../home/home.html'; ">
+			<img src="../assets/arrow-left.svg" />
+		</button>
 
-				<aside>
-					<div id="second-image" onclick="ChangeImage(event)"></div>
-					<div id="third-image" onclick="ChangeImage(event)"></div>
-					<div id="fourth-image" onclick="ChangeImage(event)"></div>
-					<div id="last-image">+3</div>
-				</aside>
-			</article>
+		<h1>Best Product</h1>
+		<img src="../assets/cart.svg" />
+	</nav>
 
-			<div id="detail">
-				<div>
-					<section id="title">
-						<h2>Men's Running Windrunner Jacket</h2>
-						<h1>Nike Repel A.I.R Hola Lou</h1>
-					</section>
-					<section id="rating">
-						<img src="../assets/star.svg" />
-						<h1>4,8</h1>
-						<p>240 reviews</p>
-					</section>
+	<main>
+		<article>
+			<div id="previewer"></div>
 
-					<section id="size">
-						<div class="size-box">S</div>
-						<div class="size-box">M</div>
-						<div class="size-box">L</div>
-						<div class="size-box">XL</div>
-					</section>
-				</div>
+			<aside>
+				<div id="second-image" onclick="ChangeImage(event)"></div>
+				<div id="third-image" onclick="ChangeImage(event)"></div>
+				<div id="fourth-image" onclick="ChangeImage(event)"></div>
+				<div id="last-image">+3</div>
+			</aside>
+		</article>
 
-				<section id="information">
-					<h1>Product informations</h1>
-					<p>Abstract Shapes and designs to the classic windrunner as part of the Artist in Residence (A.I.R.) collection. <strong>Read more</strong></p>
+		<div id="detail">
+			<div>
+				<section id="title">
+					<h2>Men's Running Windrunner Jacket</h2>
+					<h1>Nike Repel A.I.R Hola Lou</h1>
 				</section>
-				<section id="checkout">
-					<aside>
-						<h3>Grand Total</h3>
-						<h1>R$ 250,00</h1>
-					</aside>
-					<button onclick="window.location.href = '../checkout/checkout.html';">Checkout</button>
+				<section id="rating">
+					<img src="../assets/star.svg" />
+					<h1>4,8</h1>
+					<p>240 reviews</p>
+				</section>
+
+				<section id="size">
+					<div class="size-box">S</div>
+					<div class="size-box">M</div>
+					<div class="size-box">L</div>
+					<div class="size-box">XL</div>
 				</section>
 			</div>
-		</main>
-	</body>
+
+			<section id="information">
+				<h1>Product informations</h1>
+				<p>Abstract Shapes and designs to the classic windrunner as part of the Artist in Residence (A.I.R.)
+					collection. <strong>Read more</strong></p>
+			</section>
+			<section id="checkout">
+				<aside>
+					<h3>Grand Total</h3>
+					<h1>R$ 250,00</h1>
+				</aside>
+				<button onclick="window.location.href = '../checkout/checkout.html';">Checkout</button>
+			</section>
+		</div>
+	</main>
+</body>
+
 </html>

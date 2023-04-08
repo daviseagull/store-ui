@@ -193,11 +193,11 @@ aside div {
 	color: white;
 }
 
-aside > h1 {
+aside>h1 {
 	margin: 0;
 }
 
-aside > h3 {
+aside>h3 {
 	margin: 0;
 	color: lightgray;
 	font-weight: normal;
