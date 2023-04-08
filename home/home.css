@@ -40,6 +40,7 @@ footer section {
 section input {
 	margin: 10px 0;
 }
+
 section p {
 	margin: 10px 0;
 }
@@ -58,15 +59,15 @@ footer button {
 }
 
 @media screen and (min-width: 800px) {
-	main{
+	main {
 		height: 100%;
 		width: 100%;
 	}
 
-	footer{
+	footer {
 		color: white;
 		position: absolute;
-		align-self:flex-start;
+		align-self: flex-start;
 		top: 160px;
 		margin-left: 10px;
 		width: 660px;
