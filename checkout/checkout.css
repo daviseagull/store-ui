@@ -169,10 +169,6 @@ aside>h3 {
 
 
 @media screen and (min-width: 800px) {
-	div>header {
-		justify-content: center;
-		width: 100%
-	}
 
 	.content {
 		margin: 0;
