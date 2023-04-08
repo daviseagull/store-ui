@@ -13,7 +13,7 @@ body nav {
 	justify-content: space-between;
 }
 
-body>div{
+body>div {
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -21,7 +21,7 @@ body>div{
 	height: 100%;
 }
 
-.content{
+.content {
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -40,7 +40,7 @@ body header {
 	align-items: center;
 }
 
-header > h2 {
+header>h2 {
 	color: lightgray;
 	padding-left: 5px;
 	font-size: 16px;
@@ -53,7 +53,7 @@ main {
 	height: 60%;
 }
 
-main > section {
+main>section {
 	display: flex;
 	height: 30%;
 	justify-content: space-between;
@@ -61,7 +61,7 @@ main > section {
 	border: 1px solid lightgray;
 }
 
-section > figure {
+section>figure {
 	margin: 0;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -78,7 +78,7 @@ section > figure {
 	background-image: url('../assets/detail-2.jpg');
 }
 
-section > aside {
+section>aside {
 	display: flex;
 	justify-content: space-around;
 	flex-direction: column;
@@ -160,7 +160,7 @@ footer button {
 	font-size: 10px;
 }
 
-aside > h3 {
+aside>h3 {
 	margin: 0;
 	color: lightgray;
 	font-weight: normal;
@@ -169,16 +169,12 @@ aside > h3 {
 
 
 @media screen and (min-width: 800px) {
-	div>header{
+	div>header {
 		justify-content: center;
-		width:100%
+		width: 100%
 	}
 
-	body>div{
-
-	}
-
-	.content{
+	.content {
 		margin: 0;
 		padding: 0;
 		display: flex;
@@ -187,10 +183,9 @@ aside > h3 {
 		align-items: flex-start;
 		height: 100%;
 		gap: 10px;
-		/* background-color: aqua; */
 	}
 
-	main{
+	main {
 		height: 100%;
 		width: 100%;
 		padding: 0;
@@ -199,19 +194,17 @@ aside > h3 {
 		justify-content: center;
 		align-items: center;
 		border: 1px solid lightgray;
-		/* background-color: blue */
 	}
 
-	main > section {
+	main>section {
 		padding: 0;
 		margin: 0;
 		aspect-ratio: 2/1;
 		width: 80%;
 	}
 
-	footer{
+	footer {
 		padding: 10px;
-		/* background-color: brown; */
 		width: 100%;
 		border: 1px solid lightgray;
 	}
@@ -219,5 +212,5 @@ aside > h3 {
 	footer button {
 		width: 45%;
 	}
-	
+
 }
